@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	.div1{width:200px;height:300px;background:#ccc; margin:100px auto;text-align:center;line-height:300px;font-size:40px;color:#fff;-webkit-transform-style:preserve-3d;-webkit-transform:perspective(800px) rotateX(45deg) rotateY(-45deg);position:relative;left:0;top:0;}
+	.div1 .front{width:200px;height:300px;background:green;position:absolute;left:0;top:0;-webkit-transition:1s all ease; }
+	.div1 .back{width:200px;height:300px;background:red;position:absolute;left:0;top:0;-webkit-transition:1s all ease;z-index:-1;}
+	.div1:active .front{-webkit-transform:translateZ(100px);}
+	.div1:active .back{-webkit-transform:translateZ(-100px);}
+
+
+
+</style>
+</head> 
+
+<body>
+<div class="div1">
+	<div class="front">正面</div>
+	<div class="back">反面</div>
+</div>
+</body>
+</html>
